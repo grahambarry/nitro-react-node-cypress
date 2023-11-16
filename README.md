@@ -5,7 +5,15 @@ Short description or project overview.
 
 ## Installation
 
-Make sure you have Node.js and npm installed. Then, run the following commands:
+Make sure you have Node.js version 16.20.1 and npm installed. Then, run the following commands:
+
+```bash
+nvm install 16.20.1
+```
+
+```bash
+nvm use 16.20.1
+```
 
 ```bash
 npm install
