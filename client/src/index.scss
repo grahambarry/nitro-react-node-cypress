@@ -193,3 +193,18 @@ ul {
     font-weight: 700;
   }
 }
+@media only screen and (max-width: 900px) {
+  .tree-item {
+    width: 100%;
+  }
+  .tree-item .editButton {
+    width: calc(100% - 63px);
+  }
+  .tree-item .flex-row.last {
+    flex-direction: column;
+    align-items: start;
+  }
+  .tree-item .flex-row.date {
+    transform: translate(101px, -42px);
+  }
+}
