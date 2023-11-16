@@ -4,9 +4,10 @@
   "description": "Code Challenge for Nitro",
   "main": "index.js",
   "scripts": {
-    "start": "node server/server.js",
+    "start": "npm run dev",
+    "server": "node server/server.js",
     "client": "cd client && npm run client",
-    "dev": "concurrently \"npm run start\" \"npm run client\"",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
     "cypress:open": "cd client && npx cypress open",
     "cypress:run": "cd client && npx cypress run",
     "test": "cd client && npm run test"
