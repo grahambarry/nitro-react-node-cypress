@@ -35,10 +35,10 @@ This command will execute your Cypress tests.
 
 ## Project Structure
 
-React
-Redux
-Node.js
-Cypress
+React,
+Redux,
+Node.js,
+Cypress,
 
 ## Troubleshooting
 
