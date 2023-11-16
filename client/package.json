@@ -20,13 +20,14 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "npm install && cd ../ && npm install && npm run dev",
+    "installer":  "npm install && cd ../ && npm install",
+    "start": "npm run installer && npm run dev",
     "client": "react-scripts start",
     "server": "node ../server/server.js",
     "dev": "concurrently \"npm run server\" \"npm run client\"",
     "cypress:open": "npx cypress open",
     "cypress:run": "npx cypress run",
-    "test": "concurrently \"npm run dev\" \"npx cypress run\""
+    "test": "npm run installer && concurrently \"npm run dev\" \"npx cypress run\""
   },
   "eslintConfig": {
     "extends": [
