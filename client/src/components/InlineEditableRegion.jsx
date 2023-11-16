@@ -4,7 +4,7 @@ import { setData } from '../actions/action';
 import DOMPurify from 'dompurify';
 import EditIcon from '@mui/icons-material/Edit';
 
-const InlineEditableRegion = ({ item, property, editable, style }) => {
+const InlineEditableRegion = ({ item, property, editable, classes }) => {
   const [isHovered, setIsHovered] = useState(false);
   const [isActive, setIsActive] = useState(false);
 
@@ -30,7 +30,7 @@ const InlineEditableRegion = ({ item, property, editable, style }) => {
     <div className={`
       editButton
       ${property}
-      ${style}
+      ${classes}
       ${isActive && 'bold'}
       ${isHovered && 'showEditIcon bold'}`}>
       <div

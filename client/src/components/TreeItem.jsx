@@ -29,8 +29,8 @@ const TreeItem = ({ item }) => {
           ? <> <ArrowDropDownIcon /> {showAvatar ? <AccountCircleIcon /> : <FolderOpenIcon  />}</> 
           : <><ArrowRightIcon /> {showAvatar ? <AccountCircleIcon /> : <FolderIcon  />}</>}
       </div>
-      {showAvatar && <InlineEditableRegion editable={isActive} item={item} property='author' style={'first'} />}
-      <InlineEditableRegion editable={isActive} item={item} property='text' style={!showAvatar && 'first'} />
+      {showAvatar && <InlineEditableRegion editable={isActive} item={item} property='author' classes={'first'} />}
+      <InlineEditableRegion editable={isActive} item={item} property='text' classes={!showAvatar && 'first'} />
       <div className={'flex-row last'}>
         <div className={'flex-row'}>
           <FmdGoodIcon />
