@@ -5,8 +5,6 @@ import TreeItem from './TreeItem';
 import { useSelector } from 'react-redux';
 import ArrowRightIcon from '@mui/icons-material/ArrowRight';
 import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
-import FolderIcon from '@mui/icons-material/Folder';
-import FolderOpenIcon from '@mui/icons-material/FolderOpen';
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 import FmdGoodIcon from '@mui/icons-material/FmdGood';
 import EventIcon from '@mui/icons-material/Event';
@@ -16,8 +14,6 @@ function GroupKeyTreeItem({ groupKey, entries }) {
   const groupBy = useSelector((state) => state.groupBy);
 
   const [isActive, setIsActive] = useState(false);
-
-  const showAvatar = groupBy === 'author';
 
   const toggleActive = () => {
     setIsActive((prevIsActive) => !prevIsActive);
