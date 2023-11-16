@@ -58,7 +58,7 @@ function TreeComponent() {
     const groupedData = groupData();
 
     if (groupedData === null) {
-      return <p>No data available.</p>;
+      return <p className='error-message'>No data available.</p>;
     }
 
     return (

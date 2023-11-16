@@ -15,7 +15,7 @@ const ToggleFilter = ({ group }) => {
 
   return (
     <div 
-      className={`toggleFilter ${isActive && 'active'}`} 
+      className={`toggleFilter ${group} ${isActive && 'active'}`} 
       onClick={() => handleSetGroupBy(group)}>
       {group}
     </div>
